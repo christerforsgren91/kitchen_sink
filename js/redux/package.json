@@ -41,7 +41,9 @@
     ]
   },
   "devDependencies": {
+    "concurrently": "^6.1.0",
     "cypress": "^7.3.0",
+    "json-server": "^0.16.3",
     "start-server-and-test": "^1.12.2"
   }
 }
