@@ -20,7 +20,9 @@
     "cy:run": "cypress run",
     "cy:integrate": "start-server-and-test start:silent http://localhost:3000/ cy:run",
     "cy:open": "cypress open",
-    "cypress": "start-server-and-test start:silent http://localhost:3000/ cy:open"
+    "cypress": "start-server-and-test start:silent http://localhost:3000/ cy:open",
+    "json-server": "json-server --watch db.json --port 5000",
+    "dev": "concurrently \"npm start\" \"npm run json-server\""
   },
   "eslintConfig": {
     "extends": [
@@ -45,5 +47,6 @@
     "cypress": "^7.3.0",
     "json-server": "^0.16.3",
     "start-server-and-test": "^1.12.2"
-  }
+  },
+  "proxy": "http://localhost:5000"
 }
