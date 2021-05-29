@@ -1,4 +1,3 @@
-import { Assertion } from 'chai';
 import { GET_LOGS, SET_LOADING, LOGS_ERROR } from '../actions/types';
 
 const initialState = {
